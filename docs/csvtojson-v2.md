@@ -262,7 +262,7 @@ csv()
 ```js
 csv()
 .preRawData((csvRawData,cb)=>{
-	var newData=csvRawData.replace('some value','another value')
+	const newData=csvRawData.replace('some value','another value')
 	cb(newData);
 })
 ```
@@ -272,7 +272,7 @@ csv()
 ```js
 csv()
 .preRawData((csvRawData)=>{
-  var newData=csvRawData.replace('some value','another value')
+  const newData=csvRawData.replace('some value','another value')
   // synchronous
   return newData;
   // or asynchronously

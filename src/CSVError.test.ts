@@ -1,6 +1,5 @@
-import CSVError from "./CSVError";
 import assert from "assert";
-describe("CSVError",()=>{
-  it ("should toString()",()=>{
-  })
-})
+import CSVError from "./CSVError";
+describe("CSVError", () => {
+    it("should toString()", () => {});
+});

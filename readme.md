@@ -345,7 +345,7 @@ const csv=require('csvtojson')
 // synchronous
 csv()
 .preRawData((csvRawData)=>{
-	var newData=csvRawData.replace('some value','another value');
+	const newData=csvRawData.replace('some value','another value');
 	return newData;
 })
 
@@ -353,7 +353,7 @@ csv()
 csv()
 .preRawData((csvRawData)=>{
 	return new Promise((resolve,reject)=>{
-		var newData=csvRawData.replace('some value','another value');
+		const newData=csvRawData.replace('some value','another value');
 		resolve(newData);
 	})
 	
@@ -671,7 +671,7 @@ csv({
 If a module packager is preferred, just simply `require("csvtojson")`:
 
 ```js
-var csv=require("csvtojson");
+const csv=require("csvtojson");
 
 // or with import
 import {csv} from "csvtojson";

@@ -1,4 +1,3 @@
-import csv=require("./v2");
+import csv = require("./v2");
 
-export=csv;
-
+export = csv;
